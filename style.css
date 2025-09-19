@@ -1,20 +1,57 @@
 
 body {
-  margin: 0;
+  margin: 0;;
   font-family: Arial, sans-serif;
   background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
   color: #fff;
   text-align: center;
   align-items: center;
+  scrollbar-width: none;
 }
 
 header {
+  height: 100px ;
+  width: 100% ;
+  border: 2px solid #000;
+  border-radius: 20px;
+  background-color: #1a1a1a;
+  display: flex ;
   padding: 20px;
+  position: fixed;
+  z-index: 1000;
+  border-bottom:#aaf0d1 2px solid;
 }
 
-.logo {
-  width: 400px;
+
+
+ .HeaderBTN {
+  margin: 50px;
+  align-self: center;
+  padding: 10px 20px;
+  background: #aaf0d1;
+  color: #1a1a1a;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+} 
+
+
+.HeaderBTN:hover {
+  background: #8ed5b9;
+  transform: scale(1.05);
+}
+
+.logo img {
+  height: 100px;
+
     border-radius: 20px;
+    transition: 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .main {
@@ -35,6 +72,7 @@ h1 {
     transition: transform 0.3s ease, box-shadow 0.3s ease ;
     padding: 20px;
     border-bottom: 2px solid #aaf0d1;
+    margin-top: 200px;
 }
 h1:hover {
     transform: translateY(-4px);
@@ -215,6 +253,18 @@ a {
 }
 
 
+.redes a {
+  color: #fff;         
+  font-size: 2rem;      
+  margin: 0 15px;      
+  text-decoration: none;
+  transition: color 0.3s;
+
+}
+.redes a:hover {
+  color: rgba(255,77,109,0.5);       /* color al pasar el ratón (rojo en este ejemplo) */
+}
+
 /* Footer */
 .footer {
   margin-top: 40px;
@@ -222,3 +272,4 @@ a {
   border-top: 1px solid #333;
   font-size: 14px;
 }
+
