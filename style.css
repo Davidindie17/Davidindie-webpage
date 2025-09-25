@@ -66,6 +66,10 @@ header {
   font-size: 1.4rem;
   margin-top: 100px;
 }
+.texto2 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+}
 
 h1 {
     color: #aaf0d1;
@@ -198,6 +202,7 @@ a {
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 }
 .downloads:hover {
   transform: translateY(-4px);
@@ -254,6 +259,7 @@ a {
   border-radius: 30px;
   font-weight: bold;
   transition: all 0.3s ease;
+  margin-left: 20px;
 }
 
 .btn-download:hover {
@@ -274,6 +280,65 @@ a {
 .redes a:hover {
   color: rgba(255,77,109,0.5);       /* color al pasar el ratón (rojo en este ejemplo) */
 }
+
+/* galeria de imagenes doodle care */
+.galeria-DoodleCare {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 50px;
+  text-align: center;
+  background: #1e1e1e;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+.galeria-DoodleCare:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+}
+
+.galeria-DoodleCare h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff4d6d;
+  border-bottom: 2px solid #ff4d6d;
+  display: inline-block;
+  padding-bottom: 8px;
+}
+
+.galeria-DoodleCare .imagenes  {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.galeria-DoodleCare .imagenes img {
+  width: 400px;
+  height: 750px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px;
+}
+
+.galeria-DoodleCare .imagenPrincipal img
+{
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 20px  ;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-DoodleCare  img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+} 
 
 /* Footer */
 .footer {
