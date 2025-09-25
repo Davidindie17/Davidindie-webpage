@@ -10,26 +10,27 @@ body {
 }
 
 header {
-  height: 100px ;
+  height: 70px ;
   width: 100% ;
   border: 2px solid #000;
   border-radius: 20px;
-  background-color: #1a1a1a;
+  background: #1A1A1A;
   display: flex ;
   padding: 20px;
   position: fixed;
   z-index: 1000;
-  border-bottom:#aaf0d1 2px solid;
+  border-bottom:#aaf0d1 2px solid ;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
 }
 
 
 
- .HeaderBTN {
+.HeaderBTN {
   margin: 50px;
   align-self: center;
   padding: 10px 20px;
   background: #aaf0d1;
-  color: #1a1a1a;
+  color: #111;
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
@@ -43,10 +44,13 @@ header {
 }
 
 .logo img {
-  height: 100px;
+  height: 75px;
+  border-radius: 20px;
+  transition: transform 0,3s ease;
+}
 
-    border-radius: 20px;
-    transition: 0.3s;
+.logo{
+  transition: transform 0,3s ease;
 }
 
 .logo:hover {
@@ -56,15 +60,19 @@ header {
 
 .main {
   padding: 50px 20px;
+}
 
+.texto1 {
+  font-size: 1.4rem;
+  margin-top: 100px;
 }
 
 h1 {
     color: #aaf0d1;
     text-align: center;
     border: none;
-    max-width: 500px;
-    max-height: 300px;
+    width:750px;
+    height: 55px;
     margin: 0 auto;
     border-radius: 20px;
     background: #1e1e1e;
@@ -73,6 +81,7 @@ h1 {
     padding: 20px;
     border-bottom: 2px solid #aaf0d1;
     margin-top: 200px;
+    font-size: 3rem;
 }
 h1:hover {
     transform: translateY(-4px);
@@ -107,37 +116,33 @@ a {
 /* ----- Sección Newsletter ----- */
 
 .newsletter {
-    padding: 3rem 2rem;
-    background: #222;
-    border-top: 2px solid #333;
+    max-width: 900px;
+  margin: 100px auto;
+  padding: 50px;
+  text-align: center;
+  background: #1e1e1e;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.newsletter:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
+}
+
 .newsletter h2 {
-    color: #9fffd8;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #ff4d6d;
+  border-bottom: 2px solid #ff4d6d;
+  display: inline-block;
+  padding-bottom: 8px;
 }
-.newsletter form {
-    margin-top: 1rem;
-}
-.newsletter input {
-    padding: 0.7rem;
-    border: none;
-    border-radius: 20px;
-    outline: none;
-    width: 250px;
-    margin-right: 10px;
-}
-.newsletter button {
-    padding: 0.7rem 1.2rem;
-    background: #9fffd8;
-    color: #1a1a1a;
-    border: none;
-    border-radius: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-.newsletter button:hover {
-    background: #7deabb;
+
+.newsletter p {
+
+  margin-bottom: 50px;
 }
 
 /* ----- Sección About ----- */
@@ -192,6 +197,11 @@ a {
   background: #1e1e1e;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.downloads:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.55);
 }
 
 .downloads h2 {
