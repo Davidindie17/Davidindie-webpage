@@ -10,8 +10,8 @@ body {
 }
 
 header {
-  height: 70px ;
-  width: 100% ;
+  width: 100vw;
+  height: 7vh; 
   border: 2px solid #000;
   border-radius: 20px;
   background: #1A1A1A;
